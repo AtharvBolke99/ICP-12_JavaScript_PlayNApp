@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgb(195, 194, 194);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-align: center; 
+}
+.logo-img {
+    width: 60px;
+    margin-right: 7px;
+}
+.web-name {
+    color: #a74cdf;
+}
+.mainu {
+    margin: 10px;
+    color: #a74cdf;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+.mainu:hover {
+    border-bottom: 2px solid #a74cdf;
+    padding-bottom: 3px;
+    transition: 0.3s ease-in-out;
+}
