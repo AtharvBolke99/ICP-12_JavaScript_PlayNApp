@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayNApps</title>
 </head>
-    <link rel="stylesheet" href="./css/home.css">
+<link rel="stylesheet" href="./css/home.css">
+
 <body>
     <div class="navbar">
-
         <div class="logo">
             <img src="./images/logo-playnapps.png" class="logo-img">
             <h2 class="web-name">PlayNApps</h2>
         </div>
-        <div class="mainu-bar">
+        <div class="mainu-bar" id="mainu-bar">
             <a href="#" class="mainu">Home</a>
             <a href="#" class="mainu">Apps</a>
             <a href="#" class="mainu">Games</a>
             <a href="#" class="mainu">Login</a>
         </div>
+        <img src="./images/list.png" alt="humberger" class="humberger" onclick="togglemainu()">
     </div>
+
+<div class="sub-containt">
+    <h1 class="main-heading">Apps & Games</h1>
+    <p class="sub-heading">Discover amazing apps and games crafted with passion. Form productivity tools to entertainment, Find your next digital experiance.</p>
+    <input type="text" placeholder="Search Apps and Games" class="input-box">
+</div>
+
+<div class="app_game_slider">
+        <h2 class="slider-heading">Most Popular Apps and Games</h2>
+
+        <div class="slider-img"></div>
+
+</div>
+
+
+    <script src="./javascript/home.js"></script>
 </body>
+
 </html>
