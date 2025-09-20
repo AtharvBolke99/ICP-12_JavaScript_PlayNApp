@@ -49,3 +49,9 @@ color: #dc3545;
 .level {
 color: #007bff;
 }
+.game-board {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+
+        }
