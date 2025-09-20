@@ -53,5 +53,8 @@ color: #007bff;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, 1fr);
+gap: 15px;
+margin-bottom: 30px;
+padding: 20px;
 
         }
