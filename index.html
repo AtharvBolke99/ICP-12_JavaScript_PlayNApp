@@ -15,7 +15,7 @@
             <h2 class="web-name">PlayNApps</h2>
         </div>
         <div class="mainu-bar" id="mainu-bar">
-            <a href="#" class="mainu">Home</a>
+            <a href="./index.html" class="mainu">Home</a>
             <a href="#apps" class="mainu">Apps</a>
             <a href="#" class="mainu">Games</a>
             <a href="#" class="mainu">Login</a>
@@ -23,26 +23,31 @@
         <img src="./images/list.png" alt="humberger" class="humberger" onclick="togglemainu()">
     </div>
 
-<div class="sub-containt">
-    <h1 class="main-heading">Apps & Games</h1>
-    <p class="sub-heading">Discover amazing apps and games crafted with passion. Form productivity tools to entertainment, Find your next digital experiance.</p>
-    <input type="text" placeholder="Search Apps and Games" class="input-box">
-</div>
-
-<section id="apps">
-    <h2 class="app-heading">Apps</h2>
-<div class="apps" id="apps-card">
-    <div class="apps-card">
-        <img src="./images/img0.jpg" alt="app-img" class="app-img" id="appImg">
-        <p class="type">App</p>
-        <h3 class="app-name">Expense Tracker</h3>
-        <div class="btn">
-            <button class="start-btn">Start Now</button>
-        </div>
+    <div class="sub-containt">
+        <h1 class="main-heading">Apps & Games</h1>
+        <p class="sub-heading">Discover amazing apps and games crafted with passion. Form productivity tools to
+            entertainment, Find your next digital experiance.</p>
+        <input type="text" placeholder="Search Apps and Games" class="input-box">
     </div>
-</div>
 
-</section>
+    <section id="apps">
+        <h2 class="app-heading">Apps</h2>
+        <div class="apps" id="apps-card">
+            <div class="apps-card">
+                <img src="./images/img0.jpg" alt="app-img" class="app-img" id="appImg">
+                <h3 class="app-name">Expense Tracker</h3>
+                <P class="app-lines">Easily log daily expenses, categorize spending, and visualize your budget with
+                    clear insights.</P>
+                <div class="btn">
+                    <button class="start-btn" onclick="showOverlay()">Start Now</button>
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <a href="#"></a>
+            </div>
+        </div>
+
+    </section>
 
     <script src="./javascript/home.js"></script>
 </body>
