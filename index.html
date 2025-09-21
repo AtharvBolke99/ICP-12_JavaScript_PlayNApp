@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayNApps</title>
 </head>
+<link rel="stylesheet" href="./css/home.css">
+
 <body>
-    
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo-playnapps.png" class="logo-img">
+            <h2 class="web-name">PlayNApps</h2>
+        </div>
+        <div class="mainu-bar" id="mainu-bar">
+            <a href="./index.html" class="mainu">Home</a>
+            <a href="#apps" class="mainu">Apps</a>
+            <a href="#Games" class="mainu">Games</a>
+            <a href="#" class="mainu">Login</a>
+        </div>
+        <img src="./images/list.png" alt="humberger" class="humberger" onclick="togglemainu()">
+    </div>
+
+    <div class="sub-containt">
+        <h1 class="main-heading">Apps & Games</h1>
+        <p class="sub-heading">Discover amazing apps and games crafted with passion. Form productivity tools to
+            entertainment, Find your next digital experiance.</p>
+        <input type="text" placeholder="Search Apps and Games" class="input-box">
+    </div>
+
+    <section id="apps">
+        <h2 class="app-heading">Apps</h2>
+        <div class="apps" id="apps-card">
+        </div>
+    </section>
+
+    <section id="Games">
+        <h2 class="game-heading">Games</h2>
+        <div class="games" id="games-card">     
+        </div>
+    </section>
+
+    <script src="./javascript/home.js"></script>
 </body>
+
 </html>
