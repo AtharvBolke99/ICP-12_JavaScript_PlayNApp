@@ -112,5 +112,5 @@ box-shadow: 15px 0 0 #A0522D;
 }
 .mole.up {
 bottom: 10px;
-
+animation: pop-up 0.3s ease-out;
 }
