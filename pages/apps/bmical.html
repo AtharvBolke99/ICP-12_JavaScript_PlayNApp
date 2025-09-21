@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="../../css/BMI.css">
+</head>
+<body>
+<!DOCTYPE html>
+<!DOCTYPE html>
+     <a href="ICP-12_JavaScript_Project-3/index.html" class="exit-btn">Exit</a>
+    <!-- BMI Card -->
+    <div class="card" id="card-bmi">
+      <h3>BMI Calculator</h3>
+      <p class="small-muted">Calculate Body Mass Index (BMI) and category.</p>
+
+      <div class="bmi-grid">
+        <div>
+          <label class="small-muted">Height (cm)</label>
+          <input type="number" id="height" placeholder="e.g. 170" min="0" />
+        </div>
+        <div>
+          <label class="small-muted">Weight (kg)</label>
+          <input type="number" id="weight" placeholder="e.g. 60" min="0" />
+        </div>
+      </div>
+      <div style="margin-top:10px;display:flex;gap:8px">
+        <button class="btn green" onclick="calcBMI()">Calculate</button>
+        <button class="btn ghost" onclick="clearBMI()">Clear</button>
+      </div>
+
+      <div style="margin-top:10px">
+        <div><span class="small-muted">BMI:</span> <span id="bmi-value" class="result-badge">—</span></div>
+        <div style="margin-top:6px"><span class="small-muted">Category:</span> <span id="bmi-cat" class="result-badge">—</span></div>
+      </div>
+      <script src="../../javascript/BMIscript.js"></script>
+</body>
+</html>
