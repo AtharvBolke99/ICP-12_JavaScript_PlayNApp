@@ -113,8 +113,21 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+.games {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .app-heading {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(195, 195, 195);
+    margin-top: 50px;
+}
+
+.game-heading {
     text-align: center;
     font-size: 40px;
     color: rgb(195, 195, 195);
@@ -125,17 +138,34 @@ body {
     width: 400px;
     height: auto;
     border-radius: 15px;
-    ;
-    background-color: rgba(21, 21, 21, 0.2);
+    background-color: #1F293780;
     box-shadow: 0px 0px 2px grey;
     margin: 20px 20px;
 }
 
-.app-img {
+.games-card {
     width: 400px;
     height: auto;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px;
+    background-color: rgba(21, 21, 21, 0.2);
+    box-shadow: 0px 0px 2px grey;
+    margin: 20px 20px;
+    background-color: #1F293780;
+}
 
+.app-img {
+    width: 60px;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.game-img {
+    width: 60px;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .app-name {
@@ -143,6 +173,14 @@ body {
     color: rgb(195, 195, 195);
     margin-left: 15px;
     margin-top: 20px;
+    margin-left: 20px;
+}
+.game-name {
+    font-size: 25px;
+    color: rgb(195, 195, 195);
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .btn {
@@ -183,10 +221,28 @@ body {
     }
 }
 
+.games-card:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #a74cdf;
+
+    .game-name {
+        color: #a74cdf;
+        transition: 0.3s;
+    }
+}
+
 .app-lines {
     color: rgb(195, 195, 195);
-    margin: 0px 10px;
+    margin: 0px 20px;
+}
+.game-lines {
+    color: rgb(195, 195, 195);
+    margin: 0px 20px;
+}
 
+.link-tag {
+    text-decoration: none;
+    color: rgb(195, 195, 195);
 }
 
 
@@ -249,10 +305,23 @@ body {
         box-shadow: 0px 0px 2px grey;
         margin: 15px 5px;
     }
+    .games-card {
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        background-color: rgba(21, 21, 21, 0.2);
+        box-shadow: 0px 0px 2px grey;
+        margin: 15px 5px;
+    }
 
     .app-img {
-        width: 300px;
+        width: 50px;
     }
+
+    .game-img {
+        width: 50px;
+    }
+    
 
     .start-btn {
         width: 180px;
@@ -260,9 +329,8 @@ body {
         font-size: 17px;
         border-radius: 10px;
         border: none;
-        margin-top: 6px;
         cursor: pointer;
-        margin: 15px 0px;
+        margin: 25px 0px;
 
     }
 }
