@@ -1,0 +1,63 @@
+ body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .exit-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 15px;
+     border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+   }
+     h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #8a2be2, #1e90ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 500px;
+      text-align: center;
+      
+    }
+    
+    .toggle-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      align-items: center;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #0c0c0c;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      margin-right: 100px;
+    }
+
+    .torch-on {
+      background-color: white;
+      color: rgb(12, 12, 12);
+    }
+
+    .torch-off {
+      background-color: black;
+      color: rgb(255, 255, 255);
+    }
+
+    .toggle-btn:hover {
+      opacity: 0.9;
+    }
