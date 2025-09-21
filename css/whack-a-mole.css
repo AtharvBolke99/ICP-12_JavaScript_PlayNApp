@@ -206,3 +206,19 @@ animation: hit-pop 0.6s ease-out;
                 transform: translate(-50%, -50%) scale(1) translateY(-20px);
             }
 }
+ @media (max-width: 600px) {
+            .hole {
+                width: 90px;
+                height: 90px;
+            }
+            
+            .mole {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .game-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
