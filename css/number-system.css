@@ -1,0 +1,109 @@
+body{
+
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+    color: #f8fafc;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exit-btn {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+   background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.8rem;
+  color: #00d9ff; 
+}
+.container {
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.select{
+    width: 200px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.input{
+    width: 360px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+#inputNumber{
+    margin-left: 10PX;
+}
+#outputNumber{
+    margin-left: 70PX;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.div{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.btn-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:end;
+    margin-top: 10px;
+}
+.convert-b{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+ box-shadow: 0px 0px 10px 2px rgb(152, 155, 156);
+  width: 200px;
+}
+.convert-b:hover{
+  box-shadow: 5px 5px 10px 2px rgb(21, 25, 26);
+}
+.reset-b{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 2px rgb(152, 155, 156);
+  width: 200px;
+}
+.reset-b:hover{
+    box-shadow: 5px 5px 10px 2px rgb(21, 25, 26);
+}
