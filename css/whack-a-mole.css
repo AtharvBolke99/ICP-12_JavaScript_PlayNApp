@@ -106,3 +106,7 @@ top: 5px;
 left: 25px;
 width: 15px;
 height: 10px;
+background: #A0522D;
+border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+box-shadow: 15px 0 0 #A0522D;
+}
