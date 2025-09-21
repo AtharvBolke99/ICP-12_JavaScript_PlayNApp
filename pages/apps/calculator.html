@@ -6,6 +6,48 @@
     <title>Calculator page</title>
 </head>
 <body>
-   <h1>calculate</h1> 
+   <div class="card">
+    <div class="title">Build Calculator</div>
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+      <button onclick="append('%')">%</button>
+      <button onclick="clearDisplay()" class="special">C</button>
+      <button onclick="backspace()" class="special">⌫</button>
+      <button onclick="append('/')">÷</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('*')">×</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('-')">−</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('+')">+</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="calculate()" class="equal">=</button>
+      <button onclick="append('(')">(</button>
+      <button onclick="append(')')">)</button>
+      <button onclick="append('!')">!</button>
+
+      <!-- Scientific functions -->
+      <button onclick="append('Math.sin(')"class="sci">sin</button>
+      <button onclick="append('Math.cos(')" class="sci">cos</button>
+      <button onclick="append('Math.tan(')" class="sci">tan</button>
+      <button onclick="append('Math.sqrt(')" class="sci">√</button>
+      <button onclick="append('Math.pow(')" class="sci">xʸ</button>
+      <button onclick="append('Math.log(')" class="sci">log</button>
+      <button onclick="append('Math.PI')" class="sci">π</button>
+      <button onclick="append('Math.E')" class="sci">e</button>
+    </div>
+  </div> 
 </body>
 </html>
