@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Operations</title>
+</head>
+<body>
+     <!-- Text Operations Card -->
+        <div class="card text-op" id="card-text">
+            <h3>Text Operations</h3>
+            <p class="small-muted">Quick text transforms: uppercase, lowercase, reverse, count words, clear.</p>
+
+            <textarea id="txt" placeholder="Type or paste text here..."></textarea>
+
+            <div class="ops">
+                <button class="btn ghost" onclick="toUpper()">UPPER</button>
+                <button class="btn ghost" onclick="toLower()">lower</button>
+                <button class="btn ghost" onclick="reverseText()">Reverse</button>
+                <button class="btn ghost" onclick="countWords()">Word Count</button>
+                <button class="btn ghost" onclick="clearText()">Clear</button>
+            </div>
+
+            <div style="margin-top:12px"><span class="small-muted">Result:</span> <span id="text-result"
+                    class="result-badge">—</span></div>
+        </div>
+</body>
+</html>
