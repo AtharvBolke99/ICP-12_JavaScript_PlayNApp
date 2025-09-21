@@ -95,5 +95,8 @@ top: 15px;
 left: 20px;
 width: 8px;
 height: 8px;
+background: #000;
+border-radius: 50%;
+box-shadow: 25px 0 0 #000, 10px 15px 0 #FF1493;
 }
 
