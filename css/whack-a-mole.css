@@ -99,4 +99,10 @@ background: #000;
 border-radius: 50%;
 box-shadow: 25px 0 0 #000, 10px 15px 0 #FF1493;
 }
-
+.mole::after {
+content: '';
+position: absolute;
+top: 5px;
+left: 25px;
+width: 15px;
+height: 10px;
