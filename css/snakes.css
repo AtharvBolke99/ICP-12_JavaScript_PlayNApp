@@ -3,12 +3,25 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: #2d3436;
+      background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: white;
       flex-direction: column;
     }
+     .exit-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
     canvas {
       border: 3px solid white;
       background: #000;
