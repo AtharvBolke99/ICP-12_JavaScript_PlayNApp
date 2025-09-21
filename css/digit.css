@@ -72,3 +72,38 @@ body {
   letter-spacing: 2px;
   text-align: center;
 }
+/* Buttons */
+.btn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn.green {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+}
+
+.btn.green:hover {
+  background:linear-gradient(135deg, #379d68,#029161);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px;
+  background: linear-gradient(90deg,#2575fc,#6a11cb);
+}
+
+.btn.ghost:hover {
+  background: #f3f3f3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
