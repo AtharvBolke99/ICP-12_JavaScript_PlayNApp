@@ -180,3 +180,15 @@ margin-bottom: 15px;
 .hidden {
 display: none;
 }
+.hit-effect {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #FFD700;
+font-size: 2em;
+font-weight: bold;
+
+pointer-events: none;
+z-index: 10;
+}
