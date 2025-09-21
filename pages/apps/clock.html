@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Clock Card -->
+        <div class="card" id="card-clock">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                    <h3>Digital Clock</h3>
+                    <p class="small-muted">Live time with 12/24h toggle and date.</p>
+                </div>
+                <div style="text-align:right">
+                    <span class="small-muted" id="clock-date"></span>
+                </div>
+            </div>
+
+            <div style="margin-top:12px;">
+                <div class="clock-display" id="clock-time">--:--:--</div>
+                <div style="display:flex;gap:8px;margin-top:6px;align-items:center">
+                    <button class="btn ghost" id="toggle-12-24">Toggle 12/24</button>
+                    <button class="btn green" id="toggle-seconds">Toggle Seconds</button>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
