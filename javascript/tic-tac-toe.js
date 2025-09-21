@@ -17,10 +17,7 @@
     function makeMove(cell) {
       cell.textContent = currentPlayer;
       cell.classList.add(currentPlayer.toLowerCase());
-      if (checkWinner(currentPlayer)) {
-        setTimeout(() => alert(`${currentPlayer} Wins!`), 200);
-        return;
-      }
+     
       if (cells.every(c => c.textContent !== "")) {
         setTimeout(() => alert("Draw!"), 200);
         return;
