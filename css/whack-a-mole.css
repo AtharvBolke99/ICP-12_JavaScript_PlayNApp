@@ -114,3 +114,6 @@ box-shadow: 15px 0 0 #A0522D;
 bottom: 10px;
 animation: pop-up 0.3s ease-out;
 }
+.mole.whacked {
+bottom: -80px;
+}
