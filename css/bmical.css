@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+  
+
+}
+.exit-btn {
+  background: linear-gradient(90deg,#2575fc, #6a11cb);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+}
+
+/* BMI Card */
+.card {
+  width: 400px;
+  height: auto;
+  padding: 25px;
+  border-radius: 20px;
+  border: none;
+  background:#0b011f;
+  box-shadow:  0 8px 25px rgba(0,0,0,0.6);
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+.small-muted {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Grid Inputs */
+.bmi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 18px ;
+}
+
+.bmi-grid input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.green {
+  background: #00c853;
+  color: #fff;
+  border: none;
+}
+
+.btn.green:hover {
+  background:linear-gradient(135deg, #059e43 ,#259e55,#0e9e48);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.ghost:hover {
+  background: linear-gradient(90deg, #6a11cb,#2575fc);
+  border: none;
+}
+
+/* Results */
+.result-badge {
+  display: inline-block;
+  min-width: 60px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  margin-left: 6px;
+  background: #1b034d;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
