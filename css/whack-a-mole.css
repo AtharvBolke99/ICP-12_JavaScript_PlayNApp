@@ -136,3 +136,19 @@ bottom: -80px;
     transform: translateX(-50%) scale(0.8);
 }
 }
+.controls {
+text-align: center;
+margin-bottom: 20px;
+}
+.start-btn, .restart-btn, .pause-btn {
+background: linear-gradient(45deg, #28a745, #20c997);
+color: white;
+border: none;
+padding: 15px 30px;
+font-size: 20px;
+border-radius: 25px;
+cursor: pointer;
+box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+transition: all 0.3s;
+margin: 0 10px;
+}
