@@ -74,4 +74,26 @@ transition: transform 0.1s;
 .hole:active {
 transform: scale(0.95);
 }
+.mole {
+width: 80px;
+height: 80px;
+background: linear-gradient(45deg, #D2691E, #A0522D);
+border-radius: 50%;
+position: absolute;
+bottom: -80px;
+left: 50%;
+transform: translateX(-50%);
+transition: bottom 0.3s ease-in-out;
+cursor: pointer;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+border: 3px solid #F4A460;
+}
+.mole:before{
+content: '';
+position: absolute;
+top: 15px;
+left: 20px;
+width: 8px;
+height: 8px;
+}
 
