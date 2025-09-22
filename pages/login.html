@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log In</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="auth-container">
+
+    <form id="loginForm" class="form active">
+      <h2>🔐 Log In</h2>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <a href="../index.html" class="submit">Log In</a>
+      <p>Don’t have an account? <a href="#" id="showRegister">Register</a></p>
+    </form>
+
+    <form id="registerForm" class="form">
+      <h2>📝 Register</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <a href="../index.html" class="submit">Register</a>
+      <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </form>
+  </div>
+
+  <script src="../javascript/login.js"></script>
+</body>
+</html>
