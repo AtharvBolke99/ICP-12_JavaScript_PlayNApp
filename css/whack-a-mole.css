@@ -5,14 +5,14 @@ box-sizing: border-box;
 }
 body {
 font-family: 'Arial', sans-serif;
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background:linear-gradient(180deg, #0f0c29, #302b63, #24243e);;
 display: flex;
 flex-direction: column;
 align-items: center;
 padding: 20px;
 }
  .game-container {
-background: rgba(255, 255, 255, 0.95);
+background: rgb(254, 255, 255);
 border-radius: 20px;
 padding: 30px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
