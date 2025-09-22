@@ -113,9 +113,13 @@ function showRandomMole() {
             
             mole.classList.remove('up');
             mole.classList.add('whacked');
-            // Remove whacked class after animation
+            
             setTimeout(() => {
                 mole.classList.remove('whacked');
             }, 500);
+
+            // Update score
+            score += 10;
+            updateDisplay();
             
-            
+           
