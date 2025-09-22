@@ -90,5 +90,22 @@ function updateDisplay() {
     timeDisplay.textContent = timeLeft;
     levelDisplay.textContent = level;
 }
+function showRandomMole() {
+    if (!gameActive || gamePaused) return;
+            
+        if (currentMole) {
+            currentMole.classList.remove('up');
+        }
+            const randomIndex = Math.floor(Math.random() * holes.length);
+            currentMole = moles[randomIndex];
+            currentMole.classList.add('up');
+            
+        
+            setTimeout(() => {
+                if (currentMole && currentMole.classList.contains('up') && !gamePaused) {
+                    currentMole.classList.remove('up');
+                }
+            }, Math.random() * 1000 + 500);
+}
 
-       
+        
