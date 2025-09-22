@@ -85,5 +85,10 @@ function updateTime() {
                 endGame();
             }
 }
+function updateDisplay() {
+    scoreDisplay.textContent = score;
+    timeDisplay.textContent = timeLeft;
+    levelDisplay.textContent = level;
+}
 
-        
+       
