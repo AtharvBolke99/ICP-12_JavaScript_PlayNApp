@@ -77,5 +77,13 @@ function togglePause() {
                 pauseBtn.classList.remove('paused');
             }
         }
+function updateTime() {
+    if (gamePaused) return;
+        timeLeft--;
+        timeDisplay.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                endGame();
+            }
+}
 
         
