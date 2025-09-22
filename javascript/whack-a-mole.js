@@ -46,5 +46,14 @@ function startGame() {
     timeInterval = setInterval(updateTime, 1000);
     moleInterval = setInterval(showRandomMole, moleSpeed);
 }
+function restartGame() {
+    moles.forEach(mole => {
+        mole.classList.remove('up', 'whacked');
+    });
+    if (timeInterval) clearInterval(timeInterval);
+    if (moleInterval) clearInterval(moleInterval);
+            
+    
+}
 
-        
+       
