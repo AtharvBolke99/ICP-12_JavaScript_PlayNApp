@@ -42,4 +42,9 @@ function startGame() {
     restartBtn.classList.remove('hidden');
     gameOverDiv.classList.add('hidden');
             
+
+    timeInterval = setInterval(updateTime, 1000);
+    moleInterval = setInterval(showRandomMole, moleSpeed);
 }
+
+        
