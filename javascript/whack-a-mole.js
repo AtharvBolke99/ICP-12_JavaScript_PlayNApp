@@ -124,4 +124,12 @@ function showRandomMole() {
             
             showHitEffect(holes[index]);
             
-          
+              
+            if (score > 0 && score % 100 === 0) {
+                levelUp();
+            }
+            
+            currentMole = null;
+        }
+
+        
