@@ -64,4 +64,9 @@ function togglePause() {
         pauseBtn.textContent = '▶️ Resume';
         pauseBtn.classList.add('paused');
                 
-              
+        moles.forEach(mole => {
+            if (mole.classList.contains('up')) {
+                mole.classList.remove('up');
+            }
+        });
+               
