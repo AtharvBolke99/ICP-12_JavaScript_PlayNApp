@@ -118,8 +118,10 @@ function showRandomMole() {
                 mole.classList.remove('whacked');
             }, 500);
 
-            // Update score
+            
             score += 10;
             updateDisplay();
             
-           
+            showHitEffect(holes[index]);
+            
+          
