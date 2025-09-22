@@ -53,7 +53,7 @@ function restartGame() {
     if (timeInterval) clearInterval(timeInterval);
     if (moleInterval) clearInterval(moleInterval);
             
-    
+    startGame();
 }
 
        
