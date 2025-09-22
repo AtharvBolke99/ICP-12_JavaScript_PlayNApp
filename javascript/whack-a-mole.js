@@ -33,5 +33,13 @@ function startGame() {
     timeLeft = 60;
     level = 1;
     moleSpeed = 1500;
+    
+     updateDisplay();
+    startBtn.classList.add('hidden');
+    pauseBtn.classList.remove('hidden');
+    pauseBtn.textContent = '⏸️ Pause';
+    pauseBtn.classList.remove('paused');
+    restartBtn.classList.remove('hidden');
+    gameOverDiv.classList.add('hidden');
             
 }
