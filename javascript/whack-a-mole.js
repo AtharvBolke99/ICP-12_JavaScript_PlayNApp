@@ -55,5 +55,13 @@ function restartGame() {
             
     startGame();
 }
-
-       
+function togglePause() {
+    if (!gameActive) return;
+    gamePaused = !gamePaused;
+    if (gamePaused) {
+        clearInterval(timeInterval);
+        clearInterval(moleInterval);
+        pauseBtn.textContent = '▶️ Resume';
+        pauseBtn.classList.add('paused');
+                
+              
