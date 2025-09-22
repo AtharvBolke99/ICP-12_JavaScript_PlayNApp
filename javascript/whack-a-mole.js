@@ -69,4 +69,13 @@ function togglePause() {
                 mole.classList.remove('up');
             }
         });
-               
+        currentMole = null;
+            } else {
+                timeInterval = setInterval(updateTime, 1000);
+                moleInterval = setInterval(showRandomMole, moleSpeed);
+                pauseBtn.textContent = '⏸️ Pause';
+                pauseBtn.classList.remove('paused');
+            }
+        }
+
+        
