@@ -108,4 +108,11 @@ function showRandomMole() {
             }, Math.random() * 1000 + 500);
 }
 
-        
+ function whackMole(mole, index) {
+            if (!gameActive || gamePaused || !mole.classList.contains('up')) return;
+            
+            // Add whacked animation
+            mole.classList.remove('up');
+            mole.classList.add('whacked');
+            
+            
