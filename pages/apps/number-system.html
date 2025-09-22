@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number System Converter</title>
+  <link rel="stylesheet" href="./../../css/number-system.css">
+</head>
+<body>
+    <a href="./../../index.html" class="exit-btn" target="_blank">Exit</a>
+    <div class="container">
+    <h1>Number System Converter</h1>
+
+    <div class="div1">
+        <label for="frombase">From - </label>
+      <select id="fromBase" class="select">
+        <option value="2">Binary</option>
+        <option value="10" selected>Decimal</option>
+        <option value="16">Hexadecimal</option>
+        <option value="8">Octal</option>
+      </select>
+      <label for="toBase">To -  </label>
+      <select id="toBase" class="select">
+        <option value="2">Binary</option>
+        <option value="10" selected>Decimal</option>
+        <option value="16">Hexadecimal</option>
+        <option value="8">Octal</option>
+      </select>
+    </div>
+    <div class="div2">
+        <div class="div">
+    <label for="inputNumber">Input Number - </label>
+    <input type="text" id="inputNumber" placeholder="Enter number" class="input">
+    </div>
+    <div class="div">
+    <label for="outputNumber">Result - </label>
+    <input type="text" id="outputNumber" readonly placeholder="Result" class="input">
+    </div>
+    </div>
+
+    <div class = "btn-div">
+        
+        <button onclick="reset()" class="reset-b">Reset</button>
+        <button onclick="convertNumber()" class="convert-b">Convert</button>
+    </div>
+    
+  </div>
+
+  <script src="./../../javascript/number-system.js"></script>
+</body>
+</html>
