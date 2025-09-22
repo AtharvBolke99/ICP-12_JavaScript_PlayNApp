@@ -108,7 +108,7 @@ function showRandomMole() {
             }, Math.random() * 1000 + 500);
 }
 
- function whackMole(mole, index) {
+function whackMole(mole, index) {
             if (!gameActive || gamePaused || !mole.classList.contains('up')) return;
             
             mole.classList.remove('up');
@@ -130,6 +130,16 @@ function showRandomMole() {
             }
             
             currentMole = null;
+        }
+function showHitEffect(hole) {
+            const effect = document.createElement('div');
+            effect.classList.add('hit-effect');
+            effect.textContent = '+10';
+            hole.appendChild(effect);
+            
+            setTimeout(() => {
+                hole.removeChild(effect);
+            }, 600);
         }
 
         
