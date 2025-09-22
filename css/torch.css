@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exit-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body.off {
+  background-color: black;
+  color: white;
+}
+
+body.on {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
