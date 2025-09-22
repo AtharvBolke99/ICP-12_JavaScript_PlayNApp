@@ -19,7 +19,6 @@ const restartBtn = document.querySelector('.restart-btn');
 const gameOverDiv = document.querySelector('.game-over');
 const finalScoreSpan = document.getElementById('final-score');
 
- // Add click event listeners to all moles
 moles.forEach((mole, index) => {
     mole.addEventListener('click', () => {
         if (gameActive && !gamePaused && mole.classList.contains('up')) {
@@ -27,7 +26,12 @@ moles.forEach((mole, index) => {
         }
     });
 });
-
-        
+function startGame() {
+    gameActive = true;
+    gamePaused = false;
+    score = 0;
+    timeLeft = 60;
+    level = 1;
+    moleSpeed = 1500;
             
-        
+}
