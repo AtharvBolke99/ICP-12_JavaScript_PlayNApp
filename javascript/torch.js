@@ -1,18 +1,18 @@
- const body = document.body;
-    const button = document.getElementById('torchButton');
+const btn = document.getElementById('toggleBtn');
+const body = document.body;
 
-    button.addEventListener('click', () => {
-      if (body.classList.contains('torch-off')) {
-        body.classList.remove('torch-off');
-        body.classList.add('torch-on');
-        body.style.backgroundColor = 'white';
-        body.style.color = 'black';
-        button.innerText = 'Turn OFF Torch';
-      } else {
-        body.classList.remove('torch-on');
-        body.classList.add('torch-off');
-        body.style.backgroundColor = 'black';
-        body.style.color = 'white';
-        button.innerText = 'Turn ON Torch';
-      }
-    });
+let isOn = false;
+
+btn.addEventListener('click', () => {
+  isOn = !isOn;
+
+  if (isOn) {
+    body.classList.remove('off');
+    body.classList.add('on');
+    btn.textContent = 'Turn Off';
+  } else {
+    body.classList.remove('on');
+    body.classList.add('off');
+    btn.textContent = 'Turn On';
+  }
+});
