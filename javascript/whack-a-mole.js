@@ -111,8 +111,11 @@ function showRandomMole() {
  function whackMole(mole, index) {
             if (!gameActive || gamePaused || !mole.classList.contains('up')) return;
             
-            // Add whacked animation
             mole.classList.remove('up');
             mole.classList.add('whacked');
+            // Remove whacked class after animation
+            setTimeout(() => {
+                mole.classList.remove('whacked');
+            }, 500);
             
             
