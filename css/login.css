@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/login-background.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.auth-container {
+  background: rgba(20, 20, 40, 0.9);
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  width: 380px;
+  text-align: center;
+  position: relative;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active {
+  display: flex;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form button {
+  width: 400px;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00d4ff, #7b2ff7);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+}
+
+.form p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.form a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
