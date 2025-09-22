@@ -110,3 +110,69 @@ textarea {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
+@media (max-width: 768px) {
+  .card.text-op {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .card.text-op h3 {
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .btn {
+    flex: 1 1 45%;  /* buttons adjust ho jayein */
+    min-width: unset;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .exit-btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .card.text-op {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .card.text-op h3 {
+    font-size: 18px;
+  }
+
+  textarea {
+    height: 90px;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .ops {
+    flex-direction: column; /* buttons ek ke niche ek */
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .result-badge {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
