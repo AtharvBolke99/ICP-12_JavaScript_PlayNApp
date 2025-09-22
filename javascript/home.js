@@ -54,3 +54,30 @@ for(let i=0; i<gameArray.length;i++){
     `;
 }
 
+const reviewsCard = document.getElementById("reviews-card");
+const reviewLines = document.getElementById("review-lines");
+const coustName = document.getElementById("coust-name");
+
+let reviewsArray = [
+    {reviews:'"PlayNApps has completely transformed my productivity workflow. The apps are intuitive and beautifully designed."', coustName:"- Suraj Chavan"},
+    {reviews:'"The games section is fantastic! Tic-Tac-Toe and Rock Paper Scissors bring back childhood memories with modern design."', coustName:"- jethalal"},
+    {reviews:'"The expense tracker has helped me manage my finances better than any other app. Clean interface and powerful features!"', coustName:"- Dr. Hathi"},
+    {reviews:'"The BMI calculator is so simple yet effective. The design is clean and the results are presented beautifully."', coustName:"- Champaklal"},
+    {reviews:'"The BMI calculator is so simple yet effective. The design is clean and the results are presented beautifully."', coustName:"- Aatmaram"},
+    {reviews:'"PlayNApps has completely transformed my productivity workflow. The apps are intuitive and beautifully designed."', coustName:"- Motiram"},
+    {reviews:'"The games section is fantastic! Tic-Tac-Toe and Rock Paper Scissors bring back childhood memories with modern design."', coustName:"- Atul"}
+];
+
+for(let i=0; i<reviewsArray.length; i++){
+    reviewsCard.innerHTML += `
+    <div class="reviews" id="reviews-card">
+            <div class="reviews-card">
+                <img src="./images/quote.png" alt="game-img" class="review-img" id="reviewImg">
+                <p class="review-lines" id="review-lines">${reviewsArray[i].reviews}</p>
+                <p class="coust-name" id="coust-name">${reviewsArray[i].coustName}</p>
+            </div>
+        </div>
+    
+    `;
+
+}
