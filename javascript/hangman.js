@@ -59,9 +59,10 @@ function handleGuess(letter, button) {
     button.disabled = true;
 
     if (selectedWord.includes(letter)) {
-                // If the guess is correct, update the word display
         displayWord();
-            
-        }
-
+            }
+    else {
+        wrongGuesses++;
+        updateWrongGuesses();
+            }
 }
