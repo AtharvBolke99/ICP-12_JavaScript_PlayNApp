@@ -11,3 +11,12 @@ const MAX_WRONG_GUESSES = 6;
 let selectedWord = '';
 let guessedLetters = [];
 let wrongGuesses = 0;
+
+function startGame() {
+    selectedWord = words[Math.floor(Math.random() * words.length)];
+    guessedLetters = [];
+    wrongGuesses = 0;
+    gameMessageEl.textContent = '';
+
+           
+}
