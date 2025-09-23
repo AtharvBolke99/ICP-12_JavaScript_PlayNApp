@@ -40,6 +40,8 @@ function updateWrongGuesses() {
     figureParts.forEach((part, index) => {
         part.style.display = (index < wrongGuesses) ? 'block' : 'none';
     });
-
-           
+    if (wrongGuesses >= MAX_WRONG_GUESSES) {
+        gameMessageEl.textContent = `You Lost! The word was: ${selectedWord}`;
+        disableKeyboard();
+    }      
 }
