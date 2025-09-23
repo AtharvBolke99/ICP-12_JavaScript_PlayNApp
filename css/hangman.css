@@ -63,3 +63,6 @@ margin: 3px;
 cursor: pointer;
 transition: background-color 0.2s;
 }
+#keyboard button:hover:not(:disabled) {
+background-color: #8B5CF6;
+}
