@@ -6,3 +6,4 @@ const restartButton = document.getElementById('restart-button');
 const figureParts = document.querySelectorAll('.figure-part');
 
 const words = ["DEVELOPER", "JAVASCRIPT", "HANGMAN", "BEGINNER", "PROJECT"];
+const MAX_WRONG_GUESSES = 6;
