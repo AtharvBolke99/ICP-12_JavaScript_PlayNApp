@@ -17,6 +17,8 @@ function startGame() {
     guessedLetters = [];
     wrongGuesses = 0;
     gameMessageEl.textContent = '';
-
-           
+     
+    displayWord();
+    updateWrongGuesses();
+    createKeyboard();    
 }
