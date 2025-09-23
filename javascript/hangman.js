@@ -54,3 +54,14 @@ function updateWrongGuesses() {
         keyboardEl.appendChild(button);
             });
 }
+function handleGuess(letter, button) {
+    guessedLetters.push(letter);
+    button.disabled = true;
+
+    if (selectedWord.includes(letter)) {
+                // If the guess is correct, update the word display
+        displayWord();
+            
+        }
+
+}
