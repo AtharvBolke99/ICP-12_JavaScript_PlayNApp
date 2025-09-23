@@ -35,3 +35,11 @@ function displayWord() {
         disableKeyboard();
     }    
 }
+function updateWrongGuesses() {
+    wrongGuessesEl.textContent = wrongGuesses;
+    figureParts.forEach((part, index) => {
+        part.style.display = (index < wrongGuesses) ? 'block' : 'none';
+    });
+
+           
+}
