@@ -15,3 +15,6 @@ h1 {
 color: #8B5CF6;
 margin-bottom: 0;
 }
+#game-container {
+text-align: center;
+}
