@@ -52,11 +52,7 @@
       transition: all 0.3s;
     }
 
-    .cell:hover {
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
-    }
-
+    
     .x {
       color: #1e90ff;
       text-shadow: 0 0 10px #1e90ff;
@@ -82,7 +78,4 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
-    }
+    
