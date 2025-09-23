@@ -11,6 +11,18 @@ margin: 0;
 padding: 16px;
 box-sizing: border-box;
 }
+.exit-btn {
+position: absolute;
+top: 15px;
+left: 15px;
+padding: 8px 15px;
+border: none;
+border-radius: 10px;
+background: linear-gradient(90deg, #36d1dc, #5b86e5);
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
 h1 {
 color: #8B5CF6;
 margin-bottom: 0;
