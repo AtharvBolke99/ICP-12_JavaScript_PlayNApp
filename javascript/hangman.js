@@ -45,3 +45,12 @@ function updateWrongGuesses() {
         disableKeyboard();
     }      
 }
+ function createKeyboard() {
+    keyboardEl.innerHTML = ''; 
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(letter => {
+        const button = document.createElement('button');
+        button.textContent = letter;
+        button.addEventListener('click', () => handleGuess(letter, button));
+        keyboardEl.appendChild(button);
+            });
+}
