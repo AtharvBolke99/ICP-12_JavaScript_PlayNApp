@@ -47,3 +47,11 @@ Explore the PlayNApp homepage
 
 ## 🙌 Acknowledgements
 👉 We sincerely thank our users for choosing Playnapp. Your support, feedback, and love inspire us to keep improving and adding more fun experiences for everyone.
+
+##  Contributors  🤝
+
+<a href="https://github.com/AtharvBolke99/ICP-12_JavaScript_PlayNApp/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AtharvBolke99/ICP-12_JavaScript_PlayNApp" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
