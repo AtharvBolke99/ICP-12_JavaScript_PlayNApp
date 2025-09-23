@@ -72,3 +72,5 @@ function disableKeyboard() {
     });
 }
 restartButton.addEventListener('click', startGame);
+
+ startGame();
