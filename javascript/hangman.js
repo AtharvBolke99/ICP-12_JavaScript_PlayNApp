@@ -71,3 +71,4 @@ function disableKeyboard() {
         button.disabled = true;
     });
 }
+restartButton.addEventListener('click', startGame);
