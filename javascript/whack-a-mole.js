@@ -147,4 +147,8 @@ function levelUp() {
 
             clearInterval(moleInterval);
             moleInterval = setInterval(showRandomMole, moleSpeed);
+            levelDisplay.style.animation = 'hit-pop 0.6s ease-out';
+            setTimeout(() => {
+                levelDisplay.style.animation = '';
+            }, 600);
 }
