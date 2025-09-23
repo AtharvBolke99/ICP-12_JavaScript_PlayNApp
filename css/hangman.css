@@ -30,3 +30,6 @@ stroke-width: 4;
 fill: none;
 stroke-linecap: round;
 }
+.figure-part {
+display: none;
+}
