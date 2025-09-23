@@ -109,46 +109,59 @@ function showRandomMole() {
 }
 
 function whackMole(mole, index) {
-            if (!gameActive || gamePaused || !mole.classList.contains('up')) return;
+    if (!gameActive || gamePaused || !mole.classList.contains('up')) return;
             
-            mole.classList.remove('up');
-            mole.classList.add('whacked');
+    mole.classList.remove('up');
+    mole.classList.add('whacked');
             
-            setTimeout(() => {
-                mole.classList.remove('whacked');
-            }, 500);
+    setTimeout(() => {
+        mole.classList.remove('whacked');
+    }, 500);
 
+    score += 10;
+    updateDisplay();
             
-            score += 10;
-            updateDisplay();
-            
-            showHitEffect(holes[index]);
-            
-              
-            if (score > 0 && score % 100 === 0) {
+    showHitEffect(holes[index]);
+    if (score > 0 && score % 100 === 0) {
                 levelUp();
             }
-            
-            currentMole = null;
+    currentMole = null;
         }
 function showHitEffect(hole) {
-            const effect = document.createElement('div');
-            effect.classList.add('hit-effect');
-            effect.textContent = '+10';
-            hole.appendChild(effect);
+    const effect = document.createElement('div');
+    effect.classList.add('hit-effect');
+    effect.textContent = '+10';
+    hole.appendChild(effect);
             
-            setTimeout(() => {
-                hole.removeChild(effect);
-            }, 600);
+    setTimeout(() => {
+        hole.removeChild(effect);
+    }, 600);
         }
 function levelUp() {
-            level++;
-            moleSpeed = Math.max(moleSpeed - 100, 400); 
+    level++;
+    moleSpeed = Math.max(moleSpeed - 100, 400); 
+    clearInterval(moleInterval);
+    moleInterval = setInterval(showRandomMole, moleSpeed);
+    levelDisplay.style.animation = 'hit-pop 0.6s ease-out';
+    setTimeout(() => {
+        levelDisplay.style.animation = '';
+    }, 600);
+}
 
-            clearInterval(moleInterval);
-            moleInterval = setInterval(showRandomMole, moleSpeed);
-            levelDisplay.style.animation = 'hit-pop 0.6s ease-out';
-            setTimeout(() => {
-                levelDisplay.style.animation = '';
-            }, 600);
+function endGame() {
+    gameActive = false;
+    gamePaused = false;
+    clearInterval(timeInterval);
+    clearInterval(moleInterval);
+            
+    moles.forEach(mole => {
+        mole.classList.remove('up', 'whacked');
+    });
+            
+    finalScoreSpan.textContent = score;
+    gameOverDiv.classList.remove('hidden');
+    pauseBtn.classList.add('hidden');
+    restartBtn.classList.remove('hidden');
+            
+    currentMole = null;
 }
