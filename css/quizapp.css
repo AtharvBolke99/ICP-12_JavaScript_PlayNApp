@@ -1,0 +1,136 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #120A2E;
+    color: #E2E8F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: radial-gradient(circle, #220F52 5%, #120A2E 95%);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #aa65f9;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #B8B8EB;
+}
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn {
+    background-color: #2F2459;
+    color: #D1D5DB;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.btn:hover {
+    background-color: #4A3A8A;
+}
+
+.next-btn,
+.restart-btn {
+    font-weight: 600;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin-top: 24px;
+    width: 500px; 
+    display: block;
+    margin: 24px auto 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-btn {
+    background: linear-gradient(90deg, #3C6CF4, #806AF9);
+}
+
+.next-btn:hover {
+    background: linear-gradient(90deg, #2D58D8, #6B57E2);
+}
+
+.restart-btn {
+    background: linear-gradient(90deg, #f63294, #c3094d);
+}
+
+.restart-btn:hover {
+    background: linear-gradient(90deg, #E2479B, #C2205E);
+}
+
+.score-text {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #D1D5DB;
+    text-align: center;
+}
+
+.score-num,
+.total-num {
+    font-weight: 700;
+}
+
+.score-num {
+    color: #806AF9;
+}
+
+.total-num {
+    color: #6B57E2;
+}
+
+.btn.correct {
+    background: linear-gradient(90deg, #16A34A, #16A34A);
+    color: white;
+}
+
+.btn.wrong {
+    background: linear-gradient(90deg, #DC2626, #DC2626);
+    color: white;
+}
+
+.exit-btn {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
