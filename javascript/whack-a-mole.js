@@ -165,3 +165,4 @@ function endGame() {
             
     currentMole = null;
 }
+updateDisplay();
