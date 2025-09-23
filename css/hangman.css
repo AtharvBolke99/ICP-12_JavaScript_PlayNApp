@@ -18,3 +18,8 @@ margin-bottom: 0;
 #game-container {
 text-align: center;
 }
+#hangman-drawing {
+width: 200px;
+height: 250px;
+
+}
