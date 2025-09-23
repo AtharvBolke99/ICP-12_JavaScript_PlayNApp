@@ -141,5 +141,7 @@ function showHitEffect(hole) {
                 hole.removeChild(effect);
             }, 600);
         }
-
+function levelUp() {
+            level++;
+            moleSpeed = Math.max(moleSpeed - 100, 400); 
         
