@@ -1,7 +1,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  background-image: radial-gradient(rgb(31, 2, 21) 0.1%, rgb(33, 5, 44) 90% );
+  background-image: radial-gradient(rgb(78, 19, 105) 0.1%, rgb(66, 14, 66) 90% );
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,7 @@ body {
   padding: 5px 20px;
   border: none;
   border-radius: 10px;
-   background: linear-gradient(90deg, #00C6FF, #6A00F4, #d821c9);
+  background: linear-gradient(90deg, #00C6FF, #6A00F4, #d821c9);
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -25,14 +25,16 @@ body {
 }
 .container {
   margin: 70px auto;
-  background: rgba(170, 148, 148, 0.363);
+  background: rgb(241, 240, 240);
   max-width: 400px;
-  background: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
+h1{
+  font-size: 1.8rem;
+  color: #193180; 
+}
 .options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
