@@ -4,3 +4,5 @@ const gameMessageEl = document.getElementById('game-message');
 const keyboardEl = document.getElementById('keyboard');
 const restartButton = document.getElementById('restart-button');
 const figureParts = document.querySelectorAll('.figure-part');
+
+const words = ["DEVELOPER", "JAVASCRIPT", "HANGMAN", "BEGINNER", "PROJECT"];
