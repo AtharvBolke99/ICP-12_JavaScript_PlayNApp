@@ -51,3 +51,15 @@ color: #8B5CF6;
 #keyboard {
 margin-top: 20px;
 }
+#keyboard button {
+background-color: #4A5568;
+color: #E2E8F0;
+border: 1px solid #718096;
+border-radius: 5px;
+width: 40px;
+height: 40px;
+font-size: 1rem;
+margin: 3px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
