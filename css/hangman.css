@@ -23,3 +23,10 @@ width: 200px;
 height: 250px;
 margin-top: 16px;
 }
+#hangman-drawing line,
+#hangman-drawing circle {
+stroke: #E2E8F0;
+stroke-width: 4;
+fill: none;
+stroke-linecap: round;
+}
