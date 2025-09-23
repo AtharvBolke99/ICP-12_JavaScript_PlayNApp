@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="../../css/hangman.css">
+</head>
+<body>
+    <a href="../../index.html"><button class="exit-btn">Exit</button></a>
+    <h1>Hangman</h1>
+    <div id="game-container">
+        <svg id="hangman-drawing" viewBox="0 0 200 250">
+            <line x1="10" y1="230" x2="110" y2="230" />
+            <line x1="60" y1="230" x2="60" y2="20" />
+            <line x1="60" y1="20" x2="150" y2="20" />
+            <line x1="150" y1="20" x2="150" y2="50" />
+
+            <circle class="figure-part" cx="150" cy="80" r="30" />
+            <line class="figure-part" x1="150" y1="110" x2="150" y2="170" />
+            <line class="figure-part" x1="150" y1="130" x2="120" y2="150" /> 
+            <line class="figure-part" x1="150" y1="130" x2="180" y2="150" /> 
+            <line class="figure-part" x1="150" y1="170" x2="120" y2="200" />
+            <line class="figure-part" x1="150" y1="170" x2="180" y2="200" /> 
+        </svg>
+        <div id="word-display"></div>
+        <p id="wrong-guesses">Wrong Guesses: <span>0</span></p>
+        
+        <div id="game-message"></div>
+        <div id="keyboard"></div>
+        <button id="restart-button">Play Again</button>
+    </div>
+    <script src="../../javascript/hangman.js"></script>
+</body>
+</html>

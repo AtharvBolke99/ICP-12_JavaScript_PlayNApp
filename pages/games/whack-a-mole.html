@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/whack-a-mole.css">
+</head>
+<body>
+    <a href="../../index.html"><button class="exit-btn">Exit</button></a>
+    <div class="game-container">
+        <h1>🔨 Whack-a-Mole 🔨</h1>
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="time">Time: <span id="time">60</span>s</div>
+            <div class="level">Level: <span id="level">1</span></div>
+        </div>
+        <div class="game-board">
+            <div class="hole" data-index="0">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="1">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="2">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="3">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="4">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="5">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="6">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="7">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="8">
+                <div class="mole"></div>
+            </div>
+        </div>
+         <div class="controls">
+            <button class="start-btn" onclick="startGame()">Start Game</button>
+            <button class="pause-btn hidden" onclick="togglePause()">⏸️ Pause</button>
+            <button class="restart-btn hidden" onclick=" restartGame() ">🔄 Restart</button>
+        </div>
+        <div class="game-over hidden">
+            <h2>Game Over!</h2>
+            <div class="final-score">Final Score: <span id="final-score">0</span></div>
+            <p>Great job! Try to beat your high score!</p>
+        </div>
+    </div>
+
+    <script src="../../javascript/whack-a-mole.js"></script>
+</body>
+</html>

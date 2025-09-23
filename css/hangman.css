@@ -1,0 +1,94 @@
+body {
+background-color: #2d3748;
+color: #E2E8F0;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+margin: 0;
+padding: 16px;
+box-sizing: border-box;
+}
+.exit-btn {
+position: absolute;
+top: 15px;
+left: 15px;
+padding: 8px 15px;
+border: none;
+border-radius: 10px;
+background: linear-gradient(90deg, #36d1dc, #5b86e5);
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+h1 {
+color: #8B5CF6;
+margin-bottom: 0;
+}
+#game-container {
+text-align: center;
+}
+#hangman-drawing {
+width: 200px;
+height: 250px;
+margin-top: 16px;
+}
+#hangman-drawing line,
+#hangman-drawing circle {
+stroke: #E2E8F0;
+stroke-width: 4;
+fill: none;
+stroke-linecap: round;
+}
+.figure-part {
+display: none;
+}
+#word-display {
+margin: 20px 0;
+font-size:32px ;
+letter-spacing: 10px;
+}
+#wrong-guesses {
+font-size: 18px;
+color: #A0AEC0;
+}
+#game-message {
+font-size: 20px;
+margin: 10px 0;
+min-height: 30px; 
+color: #8B5CF6;
+}
+#keyboard {
+margin-top: 20px;
+}
+#keyboard button {
+background-color: #4A5568;
+color: #E2E8F0;
+border: 1px solid #718096;
+border-radius: 5px;
+width: 40px;
+height: 40px;
+font-size: 1rem;
+margin: 3px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+#keyboard button:hover:not(:disabled) {
+background-color: #8B5CF6;
+}
+#keyboard button:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+ #restart-button {
+background-color: #8B5CF6;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+margin-top: 20px;
+cursor: pointer;
+}
