@@ -7,3 +7,7 @@ const figureParts = document.querySelectorAll('.figure-part');
 
 const words = ["DEVELOPER", "JAVASCRIPT", "HANGMAN", "BEGINNER", "PROJECT"];
 const MAX_WRONG_GUESSES = 6;
+
+let selectedWord = '';
+let guessedLetters = [];
+let wrongGuesses = 0;
