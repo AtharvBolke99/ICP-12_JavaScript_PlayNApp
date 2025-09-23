@@ -35,5 +35,6 @@ display: none;
 }
 #word-display {
 margin: 20px 0;
-
+font-size:32px ;
+letter-spacing: 10px;
 }
