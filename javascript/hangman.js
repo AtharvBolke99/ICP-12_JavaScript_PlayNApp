@@ -28,5 +28,10 @@ function displayWord() {
         .map(letter => `<span>${guessedLetters.includes(letter) ? letter : '_'}</span>`)
         .join('');
             
-            
+    
+    const wordIsGuessed = wordDisplayEl.textContent === selectedWord;
+    if (wordIsGuessed) {
+        gameMessageEl.textContent = 'You Won! 🎉';
+        disableKeyboard();
+    }    
 }
