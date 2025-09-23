@@ -33,3 +33,7 @@ stroke-linecap: round;
 .figure-part {
 display: none;
 }
+#word-display {
+margin: 20px 0;
+
+}
