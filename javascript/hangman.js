@@ -31,7 +31,7 @@ function displayWord() {
     
     const wordIsGuessed = wordDisplayEl.textContent === selectedWord;
     if (wordIsGuessed) {
-        gameMessageEl.textContent = 'You Won! 🎉';
+        gameMessageEl.textContent = 'You Won!';
         disableKeyboard();
     }    
 }
