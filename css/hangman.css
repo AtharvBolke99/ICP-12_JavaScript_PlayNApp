@@ -8,6 +8,10 @@ align-items: center;
 justify-content: center;
 min-height: 100vh;
 margin: 0;
-padding: 1rem;
+padding: 16px;
 box-sizing: border-box;
+}
+h1 {
+color: #8B5CF6;
+margin-bottom: 0;
 }
