@@ -22,3 +22,11 @@ function startGame() {
     updateWrongGuesses();
     createKeyboard();    
 }
+function displayWord() {
+    wordDisplayEl.innerHTML = selectedWord
+        .split('')
+        .map(letter => `<span>${guessedLetters.includes(letter) ? letter : '_'}</span>`)
+        .join('');
+            
+            
+}
