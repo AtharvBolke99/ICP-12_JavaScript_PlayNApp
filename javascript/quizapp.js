@@ -125,3 +125,4 @@ nextButton.addEventListener("click", handleNextButton);
 restartButton.addEventListener("click", startQuiz);
 
 document.addEventListener("DOMContentLoaded", startQuiz);
+
