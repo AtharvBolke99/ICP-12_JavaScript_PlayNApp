@@ -6,13 +6,31 @@ body {
   padding: 0;
 }
 
+.exit-btn {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+   background: linear-gradient(90deg, #00C6FF, #6A00F4, #d821c9);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+}
+
+.exit-btn:hover{
+  box-shadow: 0px 0px 10px 1px rgb(237, 248, 248);
+}
 .container {
-  margin: 50px auto;
+  margin: 70px auto;
+  background: rgba(170, 148, 148, 0.363);
   max-width: 400px;
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .options {
@@ -38,15 +56,19 @@ body {
 button {
   padding: 10px 20px;
   border: none;
-  background: #4CAF50;
-  color: #fff;
-  border-radius: 6px;
+  border-radius: 10px;
+ background: linear-gradient(90deg, #00C6FF, #6A00F4, #d821c9);
+  color: white;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background 0.3s;
+ box-shadow: 0px 0px 10px 2px rgb(61, 64, 65);
+  width: 200px;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #45a049;
+  box-shadow: 0px 0px 10px 5px rgb(66, 72, 73);
+  
 }
 
 .message {
