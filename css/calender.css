@@ -94,3 +94,18 @@ body {
 .day.today:hover {
     background: linear-gradient(90deg, #E2479B, #C2205E);
 }
+
+.exit-btn {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
