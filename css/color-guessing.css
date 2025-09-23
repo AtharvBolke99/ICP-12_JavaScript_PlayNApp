@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: radial-gradient(rgb(31, 2, 21) 0.1%, rgb(33, 5, 44) 90% );
+    color: #f8fafc;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
