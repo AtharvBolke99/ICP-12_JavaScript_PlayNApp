@@ -144,4 +144,7 @@ function showHitEffect(hole) {
 function levelUp() {
             level++;
             moleSpeed = Math.max(moleSpeed - 100, 400); 
-        
+
+            clearInterval(moleInterval);
+            moleInterval = setInterval(showRandomMole, moleSpeed);
+}
