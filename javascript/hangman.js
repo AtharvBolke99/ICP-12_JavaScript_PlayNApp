@@ -66,3 +66,8 @@ function handleGuess(letter, button) {
         updateWrongGuesses();
             }
 }
+function disableKeyboard() {
+    keyboardEl.querySelectorAll('button').forEach(button => {
+        button.disabled = true;
+    });
+}
