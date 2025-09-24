@@ -1,7 +1,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  background-image: radial-gradient(rgb(78, 19, 105) 0.1%, rgb(66, 14, 66) 90% );
+  background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
   margin: 0;
   padding: 0;
 }
@@ -59,11 +59,11 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
- background: linear-gradient(90deg, #00C6FF, #6A00F4, #d821c9);
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
- box-shadow: 0px 0px 10px 2px rgb(61, 64, 65);
+  box-shadow: 0px 0px 10px 2px rgb(61, 64, 65);
   width: 200px;
   transition: 0.3s;
 }
@@ -76,4 +76,10 @@ button:hover {
 .message {
   font-weight: bold;
   margin: 10px 0;
+}
+@media (max-width: 600px) {
+  .container{
+     max-width: 300px;
+     width: 100%;
+  }
 }
